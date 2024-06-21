@@ -1,0 +1,12 @@
+OSTYPE='darwin23'
+BASH_VERSION='GNU bash, version 3.2.57(1)-release (arm64-apple-darwin23)
+Copyright (C) 2007 Free Software Foundation, Inc.'
+SH_VERSION='GNU bash, version 3.2.57(1)-release (arm64-apple-darwin23)
+Copyright (C) 2007 Free Software Foundation, Inc.'
+GIT_VERSION='git version 2.39.3 (Apple Git-146)'
+PYTHON3_VERSION='Python 3.12.3'
+PYTHON_VERSION='Python 3.12.3'
+PY_VERSION='gen-debug.sh: line 13: py: command not found'
+JAVA_VERSION='openjdk version "21.0.2" 2024-01-16 LTS
+OpenJDK Runtime Environment Zulu21.32+17-CA (build 21.0.2+13-LTS)
+OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, sharing)'
