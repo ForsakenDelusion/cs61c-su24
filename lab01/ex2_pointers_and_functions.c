@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-void add_one(int input) {
-  input += 1;
-}
+void add_one(int input) { input += 1; }
 
 // TODO: create a pointer to input
-void add_one_pointer(______ input) {
+void add_one_pointer(int *input) {
   // TODO: add one to the integer that input points to
-  ________ += 1;
+  *input += 1; // if using input += 1; it will add 1 on your address
 }
 
 int main() {
@@ -26,7 +24,7 @@ int main() {
   // TODO: use add_one_pointer to increment x
   // Hint: compare the type of x with the type of the argument
   //       for add_one_pointer
-  add_one_pointer(______);
+  add_one_pointer(&x);
 
   // This line should print 6
   printf("add_one_pointer: %d\n", x);
