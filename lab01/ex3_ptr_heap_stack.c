@@ -4,17 +4,17 @@
 int* int_on_stack() {
   // Allocates memory on the stack for an integer
   int x = 5;
-
+  int *p = &x;
   // Returns a pointer that points to the number 5
-  return &x;
+  return p;
 }
 
 int* int_on_heap() {
   // TODO: allocate memory on the heap for an integer
-  ______ ptr_to_5 = ______;
+  int* ptr_to_5 =(int*) malloc(sizeof(*int_on_stack()));
 
   // TODO: store the number 5 in memory you just allocated
-  ______ = 5;
+  *ptr_to_5 = 5;
 
   // Returns a pointer that points to the number 5
   return ptr_to_5;
