@@ -3,3 +3,27 @@
 # Lines starting with # are comments, feel free to add any to document your commands
 
 # Please add your commands below this line
+
+#start debug
+b check_number
+start
+#jump to check_number
+r
+#step into check_range
+n
+s
+#backtrace
+bt
+#Break on line 31 if the letter is '0'
+b 31 if letter=='0'
+#continue excution
+c
+#print letter
+p letter
+#Print is_in_range
+p is_in_range
+#Print lower and upper
+p lower
+p upper
+#exit
+exit
