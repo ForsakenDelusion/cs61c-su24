@@ -8,6 +8,7 @@ main:
     li a0 40   # 10 ints, 4 bytes each
     jal malloc # malloc is defined in utils.s
     mv t0 a0   # the pointer is returned in a0
+    mv t3 t0
 
     # Fill the array with 0's
     li t1 0  # t1 is the index
@@ -22,8 +23,10 @@ loop:
     addi t0 t0 4
     # Check if we are done
     # If not, loop
-    bge t2 t1 loop
+    blt t1 t2 loop
 
+    mv a0, t3   # Move the address of the allocated memory into a0
+    jal free    # Call free to release the memory
     # Exit the program
     li a0 0
     jal exit
