@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.c58792e" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.c58792e(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -79,6 +79,21 @@
       <a name="label" val="clk"/>
       <a name="locked" val="true"/>
     </comp>
+    <comp lib="0" loc="(20,160)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(220,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(220,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(480,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -95,5 +110,21 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="2" loc="(80,170)" name="Adder"/>
+    <comp lib="3" loc="(110,140)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(10,180)" to="(10,250)"/>
+    <wire from="(10,180)" to="(40,180)"/>
+    <wire from="(10,250)" to="(190,250)"/>
+    <wire from="(100,210)" to="(110,210)"/>
+    <wire from="(170,170)" to="(190,170)"/>
+    <wire from="(190,170)" to="(190,250)"/>
+    <wire from="(190,170)" to="(220,170)"/>
+    <wire from="(20,160)" to="(40,160)"/>
+    <wire from="(80,170)" to="(90,170)"/>
+    <wire from="(90,100)" to="(220,100)"/>
+    <wire from="(90,100)" to="(90,170)"/>
+    <wire from="(90,170)" to="(110,170)"/>
   </circuit>
 </project>
